@@ -11,9 +11,31 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
   },
   "dependencies": {
     "electron": "^38.4.0"
+  },
+  "build": {
+    "appId": "com.example.basicapp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "category": "Blog"
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^26.0.12"
   }
 }
