@@ -1,0 +1,36 @@
+:root {
+    /* color-scheme: light dark; */
+    --bg-color: #f0f0f0; 
+}
+body { margin: 0; padding: 2rem; font-family: sans-serif; }
+#toolbar {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+}
+#url-input {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.nav-button {
+    padding: 5px 10px;
+    margin: 0 2px;
+}
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background: #333;
+        color: lime;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #ddd;
+        color: black;
+    }
+} */

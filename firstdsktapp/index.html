@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>DSKT app</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Welcome to dskt app 👋</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi quam sed modi magni omnis quas nulla perferendis corporis repellat aperiam neque cum, iste voluptatem nostrum tempora ea ipsa. Tempore.</p>
+    <p>Current theme source: <strong id="theme-source">System</strong></p>
+    <button id="toggle-dark-mode">Open</button>
+    <!-- <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="reset-to-system">Reset to System Theme</button> -->
+    <!-- <div id="toolbar">
+      <button id="back-btn" class="nav-button">←</button>
+      <button id="forward-btn" class="nav-button">→</button>
+      <button id="reload-btn" class="nav-button">↻</button>
+      <input type="text" id="url-input" value=""/>
+      <button id="go-btn" class="nav-button">Go</button>
+    </div> -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

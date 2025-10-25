@@ -1,0 +1,19 @@
+{
+  "name": "basicapp",
+  "version": "1.0.0",
+  "description": "Proof of Concept on Electron Js",
+  "keywords": [
+    "electron",
+    "js"
+  ],
+  "license": "MIT",
+  "author": "GuruPrakash C",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^38.4.0"
+  }
+}
